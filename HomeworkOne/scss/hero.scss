@@ -1,0 +1,44 @@
+.hero {
+  height: 50%;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("../images/city-bkg.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  h1 {
+    @include site-width(width, margin);
+    color: $white;
+    font-family: $merri-font;
+    font-weight: lighter;
+    font-size: 250%;
+
+    line-height: 70px;
+    padding-top: 80px;
+    letter-spacing: 4px;
+  }
+}
+
+@media (max-width: 870px) {
+  .hero {
+    height: 60%;
+
+    h1 {
+      font-size: 200%;
+    }
+  }
+}
+@media (max-width: 570px) {
+  .hero {
+    height: 60%;
+
+    h1 {
+      line-height: 50px;
+      font-size: 170%;
+      padding-top: 50px;
+    }
+  }
+}

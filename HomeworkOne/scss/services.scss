@@ -1,0 +1,188 @@
+.services {
+  @include site-width(width, margin);
+  width: 75%;
+  margin-bottom: 100px;
+  h1 {
+    color: $black;
+    font-family: $merri-font;
+    font-size: 230%;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    margin-left: -35px;
+  }
+  .service-container {
+    margin-top: 30px;
+    .service-cards {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      .website-creation {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url("../images/marvin-meyer-SYTO3xs06fU-unsplash.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        height: 300px;
+        width: 250px;
+        box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+        border-radius: 2px;
+        display: flex;
+        flex-direction: column;
+        h3 {
+          text-transform: uppercase;
+          line-height: 50px;
+          font-style: lighter;
+          font-size: 150%;
+          font-family: $merri-font;
+          text-align: center;
+          padding-top: 50px;
+          margin-bottom: 90px;
+          color: $white;
+          letter-spacing: 2px;
+        }
+        span:hover {
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+        span {
+          display: block;
+          padding: 5px;
+          margin: 0 auto;
+          height: 30px;
+          width: 100px;
+          border: 1px solid $white;
+          a {
+            text-decoration: none;
+            font-family: $merri-font;
+            color: $white;
+          }
+          a:visited {
+            text-decoration: none;
+          }
+        }
+      }
+      .video-production {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url("../images/harrison-kugler-qNzLI82MAso-unsplash.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        height: 300px;
+        width: 250px;
+        box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+        border-radius: 2px;
+        h3 {
+          text-transform: uppercase;
+          line-height: 50px;
+          font-style: lighter;
+          font-size: 150%;
+          font-family: $merri-font;
+          text-align: center;
+          padding-top: 50px;
+          margin-bottom: 90px;
+          color: $white;
+          letter-spacing: 2px;
+        }
+        span:hover {
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+        span {
+          display: block;
+          padding: 5px;
+          margin: 0 auto;
+          height: 30px;
+          width: 100px;
+          border: 1px solid $white;
+          a {
+            text-decoration: none;
+            font-family: $merri-font;
+            color: $white;
+          }
+        }
+      }
+      .social-media-creation {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url("../images/marten-bjork-FVtG38Cjc_k-unsplash.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        width: 250px;
+        background-color: green;
+        box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+        border-radius: 2px;
+        h3 {
+          text-transform: uppercase;
+          line-height: 50px;
+          font-style: lighter;
+          font-size: 150%;
+          font-family: $merri-font;
+          text-align: center;
+          padding-top: 50px;
+          margin-bottom: 40px;
+          color: $white;
+          letter-spacing: 2px;
+        }
+        span:hover {
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+        span {
+          display: block;
+          padding: 5px;
+          margin: 0 auto;
+          height: 30px;
+          width: 100px;
+          border: 1px solid $white;
+          a {
+            text-decoration: none;
+            font-family: $merri-font;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .services {
+    margin-bottom: 50px;
+    h1 {
+    }
+    .service-container {
+      .service-cards {
+        display: flex;
+        flex-direction: column;
+        .website-creation {
+          width: 80%;
+          margin: 0 auto;
+          margin-bottom: 50px;
+        }
+        .video-production {
+          width: 80%;
+          margin: 0 auto;
+          margin-bottom: 50px;
+        }
+        .social-media-creation {
+          width: 80%;
+          margin: 0 auto;
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+}

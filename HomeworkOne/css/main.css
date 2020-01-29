@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html,
+body {
+  height: 100%; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px; }
+
+header {
+  background-color: #000;
+  display: block;
+  max-width: 100%;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+  header nav {
+    margin: 0 auto;
+    max-width: 80%;
+    height: 50px; }
+    header nav ul {
+      font-family: "Merriweather Sans", sans-serif;
+      list-style: none;
+      display: flex;
+      justify-content: space-between; }
+      header nav ul li {
+        margin-top: 3%;
+        margin-bottom: 3%; }
+        header nav ul li a {
+          text-decoration: none; }
+      header nav ul span {
+        color: #fff; }
+      header nav ul .logo {
+        display: flex;
+        justify-content: space-between; }
+        header nav ul .logo li a {
+          letter-spacing: 2px;
+          color: #fff; }
+        header nav ul .logo li a:visited {
+          color: #fff; }
+        header nav ul .logo li a:hover {
+          color: #bebebe; }
+        header nav ul .logo img {
+          margin-top: 2%;
+          margin-bottom: 3%;
+          height: 30px;
+          width: 30px; }
+      header nav ul .links {
+        float: right;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        header nav ul .links li {
+          margin-left: 20px; }
+          header nav ul .links li a {
+            color: #fff; }
+          header nav ul .links li a:visited {
+            color: #fff; }
+          header nav ul .links li a:hover {
+            color: #bebebe; }
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  footer .logo {
+    margin: 0 auto;
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between; }
+    footer .logo a:hover {
+      color: #bebebe; }
+    footer .logo a {
+      font-family: "Merriweather Sans", sans-serif;
+      letter-spacing: 2px;
+      color: #fff;
+      margin-top: 3%;
+      color: #fff;
+      text-decoration: none; }
+    footer .logo img {
+      margin-top: 2%;
+      margin-bottom: 3%;
+      height: 30px;
+      width: 30px; }
+
+.hero {
+  height: 50%;
+  background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.2)), url("../images/city-bkg.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .hero h1 {
+    margin: 0 auto;
+    max-width: 80%;
+    color: #fff;
+    font-family: "Merriweather Sans", sans-serif;
+    font-weight: lighter;
+    font-size: 250%;
+    line-height: 70px;
+    padding-top: 80px;
+    letter-spacing: 4px; }
+
+@media (max-width: 870px) {
+  .hero {
+    height: 60%; }
+    .hero h1 {
+      font-size: 200%; } }
+
+@media (max-width: 570px) {
+  .hero {
+    height: 60%; }
+    .hero h1 {
+      line-height: 50px;
+      font-size: 170%;
+      padding-top: 50px; } }
+
+.services {
+  margin: 0 auto;
+  max-width: 80%;
+  width: 75%;
+  margin-bottom: 100px; }
+  .services h1 {
+    color: #000;
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 230%;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    margin-left: -35px; }
+  .services .service-container {
+    margin-top: 30px; }
+    .services .service-container .service-cards {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px; }
+      .services .service-container .service-cards .website-creation {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/marvin-meyer-SYTO3xs06fU-unsplash.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        width: 250px;
+        box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+        border-radius: 2px;
+        display: flex;
+        flex-direction: column; }
+        .services .service-container .service-cards .website-creation h3 {
+          text-transform: uppercase;
+          line-height: 50px;
+          font-style: lighter;
+          font-size: 150%;
+          font-family: "Merriweather Sans", sans-serif;
+          text-align: center;
+          padding-top: 50px;
+          margin-bottom: 90px;
+          color: #fff;
+          letter-spacing: 2px; }
+        .services .service-container .service-cards .website-creation span:hover {
+          background-color: rgba(0, 0, 0, 0.5); }
+        .services .service-container .service-cards .website-creation span {
+          display: block;
+          padding: 5px;
+          margin: 0 auto;
+          height: 30px;
+          width: 100px;
+          border: 1px solid #fff; }
+          .services .service-container .service-cards .website-creation span a {
+            text-decoration: none;
+            font-family: "Merriweather Sans", sans-serif;
+            color: #fff; }
+          .services .service-container .service-cards .website-creation span a:visited {
+            text-decoration: none; }
+      .services .service-container .service-cards .video-production {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/harrison-kugler-qNzLI82MAso-unsplash.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        width: 250px;
+        box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+        border-radius: 2px; }
+        .services .service-container .service-cards .video-production h3 {
+          text-transform: uppercase;
+          line-height: 50px;
+          font-style: lighter;
+          font-size: 150%;
+          font-family: "Merriweather Sans", sans-serif;
+          text-align: center;
+          padding-top: 50px;
+          margin-bottom: 90px;
+          color: #fff;
+          letter-spacing: 2px; }
+        .services .service-container .service-cards .video-production span:hover {
+          background-color: rgba(0, 0, 0, 0.5); }
+        .services .service-container .service-cards .video-production span {
+          display: block;
+          padding: 5px;
+          margin: 0 auto;
+          height: 30px;
+          width: 100px;
+          border: 1px solid #fff; }
+          .services .service-container .service-cards .video-production span a {
+            text-decoration: none;
+            font-family: "Merriweather Sans", sans-serif;
+            color: #fff; }
+      .services .service-container .service-cards .social-media-creation {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/marten-bjork-FVtG38Cjc_k-unsplash.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        width: 250px;
+        background-color: green;
+        box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+        border-radius: 2px; }
+        .services .service-container .service-cards .social-media-creation h3 {
+          text-transform: uppercase;
+          line-height: 50px;
+          font-style: lighter;
+          font-size: 150%;
+          font-family: "Merriweather Sans", sans-serif;
+          text-align: center;
+          padding-top: 50px;
+          margin-bottom: 40px;
+          color: #fff;
+          letter-spacing: 2px; }
+        .services .service-container .service-cards .social-media-creation span:hover {
+          background-color: rgba(0, 0, 0, 0.5); }
+        .services .service-container .service-cards .social-media-creation span {
+          display: block;
+          padding: 5px;
+          margin: 0 auto;
+          height: 30px;
+          width: 100px;
+          border: 1px solid #fff; }
+          .services .service-container .service-cards .social-media-creation span a {
+            text-decoration: none;
+            font-family: "Merriweather Sans", sans-serif;
+            color: #fff; }
+
+@media (max-width: 1150px) {
+  .services {
+    margin-bottom: 50px; }
+    .services .service-container .service-cards {
+      display: flex;
+      flex-direction: column; }
+      .services .service-container .service-cards .website-creation {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 50px; }
+      .services .service-container .service-cards .video-production {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 50px; }
+      .services .service-container .service-cards .social-media-creation {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 50px; } }
+
+.about {
+  margin: 0 auto;
+  max-width: 80%;
+  width: 75%; }
+  .about h1 {
+    margin-left: -35px;
+    color: #000;
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 230%;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    text-transform: uppercase; }
+  .about .about-container {
+    display: flex;
+    justify-content: space-between; }
+    .about .about-container .about-img {
+      width: 50%;
+      height: 300px;
+      background-image: url("../images/campaign-creators-gMsnXqILjp4-unsplash.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .about .about-container .about-text {
+      font-family: "Merriweather Sans", sans-serif;
+      width: 45%; }
+
+@media (max-width: 1488px) {
+  .about .about-container {
+    display: flex;
+    flex-direction: column; }
+    .about .about-container .about-img {
+      margin: 0 auto;
+      width: 80%; }
+    .about .about-container .about-text {
+      margin: 0 auto;
+      margin-top: 20px;
+      width: 80%; } }
