@@ -1,0 +1,19 @@
+{
+  "name": "hw2",
+  "version": "1.0.0",
+  "description": "Homework 2 for N315",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass scss/styles.scss css/styles.css -w"
+  },
+  "author": "Kailey Hart kalyhart@iu.edu",
+  "license": "ISC",
+  "dependencies": {
+    "gitignore": "^0.6.0",
+    "node-sass": "^4.13.1"
+  }
+}

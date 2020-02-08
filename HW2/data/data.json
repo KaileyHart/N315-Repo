@@ -1,0 +1,30 @@
+{
+  "MainNav": [
+    {
+      "path": "home",
+      "linkName": "Home"
+    },
+    {
+      "path": "about",
+      "linkName": "About"
+    },
+    {
+      "path": "contact",
+      "linkName": "Contact"
+    }
+  ],
+  "Pages": [
+    {
+      "pageName": "home",
+      "hero": "<h6>AGENCY-TO-AGENCY</h6><h1>IT SERVICE</h1><div class='hero__divider'></div><p><b>Our mission is to provide on demand IT services that are customized<br />for your business needs at the moment you need it most.</b></p>"
+    },
+    {
+      "pageName": "about",
+      "content": "<h1>ABOUT</h1>"
+    },
+    {
+      "pageName": "contact",
+      "content": "<h1>CONTACT</h1>"
+    }
+  ]
+}
