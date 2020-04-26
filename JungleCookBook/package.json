@@ -1,0 +1,21 @@
+{
+  "name": "junglecookbook",
+  "version": "1.0.0",
+  "description": "Recipe Maker",
+  "main": "index.js",
+  "scripts": {
+    "deploy-firebase": "firebase deploy",
+    "sass": "node-sass public/scss/styles.scss public/css/styles.css -w",
+    "firebase": "firebase serve --only hosting"
+  },
+  "author": "Kailey Hart",
+  "license": "ISC",
+  "devDependencies": {
+    "firebase-tools": "^7.12.1",
+    "jquery": "^3.4.1",
+    "node-sass": "^4.13.1"
+  },
+  "dependencies": {
+    "firebase": "^7.14.0"
+  }
+}

@@ -1,0 +1,122 @@
+nav {
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: space-between;
+  @include nav-width;
+  .home__logo {
+    display: flex;
+    flex-direction: column;
+    a {
+      margin-top: -30px;
+      font-family: $caveat;
+      text-decoration: none;
+      font-size: 21px;
+      color: $black;
+      vertical-align: text-top;
+    }
+    img {
+      //padding-bottom: 30px;
+    }
+  }
+
+  .home__navs {
+    display: flex;
+    justify-content: space-around;
+
+    .home__navs--mobile {
+      i {
+        height: 20px;
+        width: 30px;
+        color: $black;
+        display: none;
+        font-size: 20px;
+
+        .mobile__nav--links {
+          display: none;
+        }
+      }
+    }
+
+    .home__navs--desktop {
+      a {
+        margin-right: 20px;
+        font-family: $caveat;
+        text-decoration: none;
+        font-size: 25px;
+        color: $black;
+      }
+      #login {
+        box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.3);
+        margin-left: -10px;
+        background-color: $yellow;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    @include tablet-nav-width;
+
+    .home__logo {
+      padding-left: 50px;
+    }
+    .home__navs {
+      padding-right: 50px;
+      .home__navs--mobile {
+        i {
+          //display: flex;
+          display: block;
+        }
+        i:hover {
+          //color:$dark-pink;
+          color: $white;
+          
+          .mobile__nav--links {
+            //margin-top: 2px;
+            margin-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+            display: block;
+            background-color: $red;
+            width: 85px;
+            text-align: center;
+            border-radius: 10px;
+            a {
+              font-family: $caveat;
+              text-decoration: none;
+              font-size: 15px;
+              color: $white;
+            }
+            a:hover {
+              color: $yellow;
+            }
+          }
+        }
+        
+      }
+
+      .home__navs--desktop {
+        display: none;
+      }
+    }
+  }
+  footer {
+  }
+}
+
+@media (max-width: 360px) {
+  nav {
+    @include tablet-nav-width;
+  }
+  footer {
+  }
+}

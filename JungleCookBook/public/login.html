@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Jungle Cook</title>
+
+
+    <!--Styling-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--Caveat Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--Font Awesome Social Icons-->
+    <script src="https://kit.fontawesome.com/b048c1fea1.js" crossorigin="anonymous"></script>
+
+    <!--FIREBASE-->
+    <script defer src="/__/firebase/7.8.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.8.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.8.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.8.1/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/7.8.1/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.8.1/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="app/service.js"></script>
+    <script src="app/app.js"></script>
+
+
+  </head>
+
+  <body>
+    <div class="login">
+      <nav>
+        <div class="home__logo">
+  
+          <img src="images/logo-dots.png" alt="Dots" height="40px;">
+          <a href="index.html">The Jungle Cook</a>
+         
+        
+  
+        </div>
+        <div class="home__navs">
+          <div class="home__navs--mobile">
+            <i class="fas fa-bars">
+              <div class="mobile__nav--links">
+                <a href="index.html">Home</a>
+                <br>
+                <a href="browse.html">Browse</a>
+                <br>
+                <a href="create.html">Create Recipe</a>
+                <br>
+                <a href="login.html" id="login">Login</a>
+              </div>
+            </i>
+          </div>
+          <div class="home__navs--desktop">
+          <a href="index.html">Home</a>
+          <a href="browse.html">Browse</a>
+          <a href="create.html">Create Recipe</a>
+          <a href="login.html" id="login">Login</a>
+        </div>
+        </div>
+        </nav>
+
+      <div class="main__login">
+          <div class="login__left">
+              <h1><b>Login Here!</b></h1>
+              
+              <input type="text" value="Email Address" >
+              <input type="text" value="Password">
+              <span ><a>Login</a></span>
+          </div>
+          <div class="login__right">
+              <p><em>don't have an account?</em></p>
+              <h1><b>Sign Up!</b></h1>
+              <input type="text" value="First Name">
+              <input type="text" value="Last Name">
+              <input type="text" value="Email Address">
+              <input type="text" value="Password">
+              <span ><a>Sign Up</a></span>
+          </div>
+       
+      </div>
+
+      <footer>
+        <div class="footer__left">
+          <p><em>Copyright @ 2019 The Jungle Cook</em></p>
+        </div>
+        <div class="footer__middle">
+          <a href="login.html"><em>Login</em></a>
+          <a href="#"><em>Recipes by Category</em></a>
+          <a href="#"><em>Privacy and Copyright</em></a>
+          <a href="create.html"><em>Create Recipe</em></a>
+          <a href="yourRecipes.html"><em>Your Recipes</em></a>
+
+        </div>
+        <div class="footer__right">
+          <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/" target="_blank"><i id ="instagram" class="fab fa-instagram"></i></a>
+        </div>
+      </footer>
+      <footer class="mobile">
+        <div class="mobile__top">
+          <div class="mobile__left">
+            <p><em>Copyright @ 2019 The Jungle Cook</em></p>
+          </div>
+          <div class="mobile__right"><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i id ="instagram" class="fab fa-instagram"></i></a></div>
+        </div>
+        <div class="mobile__middle">
+        
+          <a href="login.html"><em>Login</em></a>
+          <a href="#"><em>Recipes by Category</em></a>
+          <a href="#"><em>Privacy and Copyright</em></a>
+          
+        </div>
+        <div class="mobile__bottom">
+          <a href="create.html"><em>Create Recipe</em></a>
+          <a href="yourRecipes.html"><em>Your Recipes</em></a>
+        </div>
+      </footer>
+    </div>
+
+
+    <!--FIREBASE-->
+    <!-- <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script> -->
+  </body>
+</html>

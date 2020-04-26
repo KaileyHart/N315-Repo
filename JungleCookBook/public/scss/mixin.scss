@@ -1,0 +1,19 @@
+@mixin nav-width {
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+@mixin content-width {
+    margin: 0 auto;
+    max-width: 1099px;
+}
+
+@mixin tablet-nav-width {
+    margin: 0 auto;
+    max-width: 695px;
+}
+
+@mixin mobile-nav-width {
+    margin: 0 auto;
+    max-width: 295px;
+}

@@ -1,0 +1,110 @@
+.home {
+  padding-top: 50px;
+  background-image: linear-gradient(
+      to right,
+      rgba(242, 92, 84, 0.5),
+      rgba(242, 92, 84, 0.5)
+    ),
+    url("../images/hero.jpg");
+  width: 100vw;
+  height: 112vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .main {
+    @include nav-width;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    height: 85%;
+    width: 550px;
+    
+    padding-right: 50px;
+
+    .main__title {
+      box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.3);
+      position: relative;
+      left: 60px;
+      margin: 0 auto;
+      background-color: $yellow;
+      border-radius: 50%;
+      width: 350px;
+      height: 350px;
+      padding-top: 100px;
+
+      h1 {
+        text-align: center;
+        font-family: $caveat;
+        font-size: 24;
+        font-weight: 700;
+      }
+      p {
+        margin: 0 auto;
+        text-align: center;
+        font-family: $gill-sans;
+        font-size: 13px;
+        width: 150px;
+      }
+    }
+    .main__subtext {
+      box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.3);
+      margin: 0 auto;
+      background-color: $light-pink;
+      border-radius: 50%;
+      width: 165px;
+      height: 165px;
+      padding-top: 60px;
+      p {
+        margin: 0 auto;
+        width: 100px;
+        text-align: center;
+        font-family: $gill-sans;
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 600px) {
+    .home {
+      height: 100vh;
+
+  .main {
+     width: 500px;
+      //@include mobile-nav-width;
+      //justify-content: left;
+      //margin: 0 auto;
+      height: 80%;
+    width: 700px;
+    .main__title {
+      width: 250px;
+      height: 250px;
+      padding-top: 80px;
+      margin-left: -30px;
+      h1 {
+        font-size: 17px;
+      }
+      p {
+        font-size: 9px;
+      }
+     
+    }
+    .main__subtext {
+        //padding-right: 50px;
+      margin-right: 305px;
+      width: 100px;
+      height: 100px;
+      padding-top: 35px;
+
+      p {
+        width: 65px;
+       
+        font-size: 8px;
+      }
+    }
+  }
+}
+}
